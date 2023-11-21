@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&family=Montserrat:wght@300;400;600;700&display=swap');
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url(../Fonts/Montserrat-VariableFont_wght.woff);
+} */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #0F3D3E;
+    height: 100%;
+}
+
+.head {
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    background-color: #0F3D3E;
+    display: flex;
+    align-items: center;
+    /* position: fixed;
+    z-index: 99; */
+    margin: auto;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    padding-right: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    border: none;
+}
+
+.navbar li a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: #04AA6D;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Header End */
+
+
+/* Hero Section Home page*/
+
+.hero-section {
+    width: 100%;
+
+    height: 700px;
+}
+
+.hero img {
+    width: 100%;
+    height: 700px;
+}
+
+
+
+/* popup */
+@keyframes slide {
+    to {
+        bottom: 100px;
+    }
+
+    from {
+        top: 500px;
+    }
+}
+
+.popup {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -140px;
+    left: 0px;
+    animation: slide 5s both;
+}
+
+.popup1 {
+
+    margin-right: 5%;
+    padding: 10px 5px;
+    width: 300px;
+    height: 400px;
+    left: 227px;
+    top: 662px;
+    background: #0F3D3E;
+    border: 0.5px solid #E2DCC8;
+    border-radius: 10px;
+    background-color: #0F3D3E;
+}
+
+.popup1 h2 {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 32px;
+    text-align: center;
+    font-style: normal;
+}
+
+.pop-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    margin-top: 60px;
+    margin-left: 12px;
+    justify-content: center;
+}
+
+.pop-circle p {
+    transform: translateY(72px);
+    font-family: 'Montserrat';
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px 18px;
+}
+
+/* Our Services */
+
+.services {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.service-info {
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.service-head {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.head-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.head-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.service-head .head-title {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    color: #0F3D3E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.service-info .service {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    width: 48%;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+
+
+/* achievements */
+.achievements,
+.ourplans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    margin-top: 100px;
+
+}
+
+.services h2,
+.achievements h2,
+.ourplans h2,
+.Form h2,
+.ourteam h2,
+.faq h2,
+.servic h2,
+.service-app h2,
+.Services-container h2 {
+    font-family: 'Montserrat';
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+    padding-left: 122px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.counter {
+    color: #3FA796;
+    margin-top: 70px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.count-text {
+    font-size: 28px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+/* Packages Section */
+
+.plan {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.plan .Personalplan,
+.plan .Businessplan,
+.plan .Enterplan {
+    background-color: #0F3D3E;
+    width: 30%;
+    height: 582px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.plan h4 {
+    color: #fff;
+    font-family: 'Montserrat';
+    padding: 45px 81px 0 81px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.plan .price {
+    background-color: #3FA796;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+    color: #fff;
+
+}
+
+.plan .Personalplan ul,
+.plan .Businessplan ul,
+.plan .Enterplan ul {
+    list-style: none;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 74px;
+}
+
+.plan .Personalplan li,
+.plan .Businessplan li,
+.plan .Enterplan li {
+    padding-bottom: 35px;
+    color: #fff;
+}
+
+/* End Packages */
+
+/* Contact Form */
+
+.form-container {
+    width: 60%;
+    margin-left: 20%;
+
+    margin-top: 70px;
+
+}
+
+.Form {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label.error{
+    margin-top: 1px;
+    color:red;
+}
+
+/* Contact Form End */
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #0F3D3E;
+    margin-top: 10px;
+
+}
+
+.foot {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+
+.foot-logo {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-nav,
+.foot-contact,
+.map {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.foot-nav p,
+.foot-contact p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.foot-nav ul,
+.foot-contact ul {
+    list-style: none;
+}
+
+.foot-nav li,
+.foot-contact li {
+    margin-top: 5px;
+}
+
+.foot-nav li a,
+.foot-contact li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.map iframe {
+    width: 80%;
+    height: 90%;
+}
+
+/* Footer Section End */
+
+/* Servies Page */
+
+.services-application {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.service-container {
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.service1,
+.service2 {
+    display: flex;
+    margin-top: 70px;
+}
+
+.service1 .img,
+.service2-img {
+    width: 70%;
+
+}
+
+.service-des,
+.service2-des {
+    width: 30%;
+}
+
+
+/* End Service Page */
+
+/* ABOUT PAGE */
+
+.About-hero,
+.portfolio-hero,
+.Services-hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F3D3E;
+}
+
+.About-hero h1,
+.portfolio-hero h1,
+.Services-hero h1 {
+    font-family: 'Montserrat';
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.ourteam {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.aboutus-contain {
+    width: 100%;
+    height: 890px;
+    display: flex;
+    gap: 20px;
+}
+
+.about1 {
+    position: relative;
+    width: 450px;
+    height: 278px;
+    border: 2px solid #0F3D3E;
+    border-radius: 10px;
+    left: 350px;
+    top: 131px;
+}
+
+.about2 {
+    position: relative;
+    width: 450px;
+    height: 278px;
+    border: 2px solid #0F3D3E;
+    border-radius: 10px;
+    left: 350px;
+    top: 131px;
+}
+
+.about3 {
+    position: relative;
+    width: 450px;
+    height: 278px;
+    border: 2px solid #0F3D3E;
+    border-radius: 10px;
+    right: 440px;
+    top: 476px;
+}
+
+.about4 {
+    position: relative;
+    width: 450px;
+    height: 278px;
+    border: 2px solid #0F3D3E;
+    border-radius: 10px;
+    right: 440px;
+    top: 476px;
+}
+
+
+.about-image {
+    background-color: #0F3D3E;
+    width: 92px;
+    height: 91px;
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-left: 32px;
+}
+
+.person2 img {
+    padding-top: 10px;
+}
+
+.names {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.035em;
+    color: #3FA796;
+    margin-left: 140px;
+    transform: translateY(-67px);
+}
+
+.prof {
+    margin-left: 140px;
+    transform: translateY(-58px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.035em;
+    color: #495057;
+}
+
+.person-info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.035em;
+    color: #343A40;
+    width: 368px;
+    height: 102px;
+    padding-left: 19px;
+}
+
+#accordion {
+    width: 80%;
+    margin: 70px 10%;
+    background-color: transparent;
+}
+
+.faq {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.question h3 {
+    background-color: #45a049;
+    color: #fff;
+    padding: 25px;
+    border: none;
+    /* border-bottom: 1px solid #0F3D3E;
+    border-top: 1px solid #0F3D3E; */
+}
+.question p{
+    padding: 15px 25px;
+}
+
+/* about us style-ended */
+
+/* Portfolio Page */
+
+/* lightbox gallery start */
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+.gallery-container {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1680px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.gallery {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 32%;
+    height: 200px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+}
+
+/* This container is used to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/*  Style the front side  */
+/* .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  } */
+
+/* Style the back side */
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+
+/* Portfolio Page End */
+
+/* Services Page */
+
+.Services-container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+.services{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.service-box {
+    background-color: transparent;
+    width: 32%;
+    height: 200px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+/* This container is used to position the front and back side */
+.service-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.service-box:hover .service-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.service-box-front,
+.service-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.service-box-front h4{
+    font-size: 30px;
+}
+
+/*  Style the front side  */
+.service-box-front {
+    background-color: #45a049;
+    color: #fff;
+  }
+
+/* Style the back side */
+.service-box-back {
+    color: #fff;
+    background-color: #3FA796;
+    box-shadow: inset 0 0 50px #1f1f1f;
+    transform: rotateY(180deg);
+    padding: 25px;
+}
